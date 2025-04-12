@@ -13,13 +13,13 @@ function App() {
 }
 
 function Avatar() {
-  return <img src="./public/logo512.png" />;
+  return <img src="logo512.png" className="avatar" alt="Nurgul Kereikhan" />;
 }
 
 function Intro() {
   return (
     <>
-      <h1>Nurgul</h1>
+      <h1>Nurgul Kereikhan</h1>
       <p>
         Full-stack web developer and UI/UX designer. When not coding or
         preparing yutube videos, I like to teach my son for new skills and
@@ -31,20 +31,20 @@ function Intro() {
 
 function SkillList() {
   return (
-    <div>
-      <Skill name="HTML CSS" emoji="🔥" bg="#ccc" />
-      <Skill name=" Javascript" emoji="👍🏻" />
-      <Skill name="Web Design" emoji="🔥" bg="#ccc" />
-      <Skill name="Git and Github" emoji="🔥" bg="#ccc" />
-      <Skill name="React" emoji="🔥" bg="#ccc" />
-      <Skill name="Node js" emoji="🔥" bg="#ccc" />
+    <div className="skill-list">
+      <Skill name="HTML+CSS" emoji="🔥" color="blue" />
+      <Skill name=" Javascript" emoji="💪🏻" color="green" />
+      <Skill name="Web Design" emoji="🔥" color="orange" />
+      <Skill name="Git and Github" emoji="🔥" color="yellow" />
+      <Skill name="React" emoji="🔥" color="red" />
+      <Skill name="Node js" emoji="👶🏻" color="blue" />
     </div>
   );
 }
 
-function Skill({ name, emoji, bg }) {
+function Skill({ name, emoji, color }) {
   return (
-    <div className={bg}>
+    <div className="skill" style={{ backgroundColor: color }}>
       <p>{name}</p>
       <span>{emoji}</span>
     </div>
