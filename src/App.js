@@ -11,9 +11,7 @@ function App() {
 }
 
 function Avatar() {
-  return (
-
-  )
+  return <img src="./public/logo512.png" />;
 }
 
 function Intro() {
@@ -24,6 +22,7 @@ function Intro() {
     </>
   )
 }
+
 function SkillList() {}
 
 export default App;
