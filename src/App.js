@@ -40,11 +40,15 @@ function SkillList() {
   );
 }
 
-function Skill({ name, emoji, color }) {
+function Skill({ skill, level, color }) {
   return (
     <div className="skill" style={{ backgroundColor: color }}>
-      <p>{name}</p>
-      <span>{emoji}</span>
+      <p>{skill}</p>
+      <span>
+        {level === 'Advanced' && '🔥'}
+        {level === 'Beginner' && '👶🏻'}
+        {level === 'Intermediate' && '💪🏻'}
+      </span>
     </div>
   );
 }

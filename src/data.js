@@ -35,6 +35,11 @@ const data = [
     color: '#F05032',
     level: 'Intermediate',
   },
+  {
+    skill: 'Python',
+    color: '#c1c1c1',
+    level: 'Beginner',
+  },
 ];
 
 export default data;
