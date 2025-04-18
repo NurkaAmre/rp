@@ -1,4 +1,5 @@
 import './index.css';
+import data from './data';
 
 function App() {
   return (
@@ -32,12 +33,9 @@ function Intro() {
 function SkillList() {
   return (
     <div className="skill-list">
-      <Skill name="HTML+CSS" emoji="🔥" color="blue" />
-      <Skill name=" Javascript" emoji="💪🏻" color="green" />
-      <Skill name="Web Design" emoji="🔥" color="orange" />
-      <Skill name="Git and Github" emoji="🔥" color="yellow" />
-      <Skill name="React" emoji="🔥" color="red" />
-      <Skill name="Node js" emoji="👶🏻" color="blue" />
+      {data.map((skill) => (
+        <Skill {...skill} key={skill.skill} />
+      ))}
     </div>
   );
 }
